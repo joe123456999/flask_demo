@@ -1,5 +1,9 @@
 執行flask
 ```
+source bin/activate
+
+cd server
+
 python app.py
 ```
 
