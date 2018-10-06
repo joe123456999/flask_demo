@@ -36,7 +36,9 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     if event.message.text == 'hello':
-        reply = 'hello Joe'
+        reply = 'hello Joy'
+    elif 'church' in event.message.text:
+        reply = u'church'
     else:
         reply = 'your message %s' % event.message.text
 
